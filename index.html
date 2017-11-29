@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/save.js"></script>
+    <script src="js/component.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tween.js@16.3.4"></script>
+    <link rel="stylesheet" href="css/router.css">
+    <link rel="stylesheet" href="css/mui.css">
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+<div id="root">
+    <transition name="cc" mode="out-in">
+    <router-view></router-view>
+    </transition>
+</div>
+</body>
+</html>
+<script>
+    Vue.use(save);
+    new Vue({
+        el:"#root",
+        router
+    })
+</script>
